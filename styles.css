@@ -1,0 +1,26 @@
+hr {
+    border: 10px solid burlywood;
+    border-radius: 5px;
+  }
+
+  body{
+    background-color: beige;
+  }
+
+  p{
+    color: rgb(196, 120, 21);
+    text-align: center;
+  }
+
+  p.light{
+    color: rgb(240, 184, 111);
+    text-align: center;
+  }
+
+  h1{
+    color: rgb(196, 120, 21);
+  }
+
+  img{
+    border-radius: 2%;
+  }
