@@ -1,189 +1,214 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <html lang="en">
-    <meta charset="UTF-8">
-    <title>Charles Hollingwoth</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="styles.css">
-    <!--
-     __                                        _                
-    /  |_  _  __ |  _  _    |_| _  |  |  o __ (_|    _  ___|_|_ 
-    \__| |(_| |  | (/__>    | |(_) |  |  | | |__|\^/(_) |  |_| |
-
-    Welcome to my sites markdown
-    -->
+<title>Charles Hollingworth</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
 </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<body>
-
-    <div id="about" class="w3-container w3-padding-32">
-        <h1 class="w3-center">Hello</h1>
-        <p>My name is Charles Hollingworth and i'm a Games Developer in Birstol/North Yorkshire and this is my portfolio, please browse through the games. If you have any questions please feel free to reach out to me on LinkedIn</p>
-        <p>CV and Code, for all but the current project, is available upon request, please contact me at:</p>
-        <p><a href="https://www.linkedin.com/in/charles-hollingworth-27663a258/">Charles Hollingwoth</a></p>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="1682496890173.jpeg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Charles Hollingworth</b></h4>
+    <p class="w3-text-grey">Game Developer & Voice Actor</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Work Gallery</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>About Me</a> 
     </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
 
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Active/Recent Projects</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+
+  
+  <div class="w3-container">
+    <img src="bb.png" alt="Burglar Battle" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Burglar Battle</b></p>
+      <p>This is my final university project where the entire year of around 40 student collaborated to make a single game. I specifically crated the patrol & management systems for the AI and deployment to the Playstation platfrom.</p>
+      </div>
+  </div>
+  <br>
+  
+  <div class="w3-row-padding">
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="PS.png" alt="Pullshot" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>PullShot Tower Defense</b></p>
+        <p>My current project is a Multiplayer Online Tower Defense based upon a map that can shift to create new paths changing the layout little by little every 5 rounds.  </p>
+        <br>
+        <br>
+      </div>
+        </div>
+
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="dis.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Dissertation: Network Communication Standards</b></p>
+        <p>My Dissertation project has been to create a network protocol built on top of UDP, this however was simplified down to the creation of a standard for data transference built on top of TCP due to time constraints. The TCP server in the example project is wrapped into a Shared Library made for the standard.</p>
+        </div>
+    </div>
+  </div>
+
+  <header id="Jam Games">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Jam Games</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="PMD2.png" alt="Porks Must DIE" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Porks Must Die 2600 (2023)</b></p>
+        <p>This Game Jam was to recreate a modern game in the spirit of the Atari 2600, this was a recreation of Orcs Must Die.
+        </div>
+    </div>
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="THHS.png" alt="This House has Secrets (2023)" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>This House has Secrets (2023)</b></p>
+        <p>This House has Secrets was a hardware restricted jam to create an original game on an Intel Celeron NuC with integrated graphics.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-container">
+      <img src="RW.png" alt="Root Wars: The Thirst for Life (2023)" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Root Wars: The Thirst for Life (2023)</b></p>
+        <p>This Game Jam was for GGJ's Roots theme. We also worked with a student from another course, in this case a
+          Music Technology student who created all audio for the game</p>
+      </div>
+    </div>
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="WT.png" alt="Warden's Teddy (2021)" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Warden's Teddy (2021)</b></p>
+        <p>This Game Jam's theme was Lost and Found as part of GGJ. Searching through an abandoned prison complex to get the teddy lost somewhere inside, whilst the game is fully completable it is designed as a rage game.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="Technical Exploration Tasks">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Technical Exploration Tasks</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+  
+
+  <div class="w3-container w3-margin-bottom">
+    <img src="PP.png" alt="Level Completability (2023)" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Level Completability (2023)</b></p>
+      <p>This project was to try and create a tool to check if levels are completable by using Unity's built-in navmesh, with focus being on making the tool easy to use. By adding the checker into the scene and having a navmesh it makes sure that all areas marked with a checkpoint are reachable and that the end is reachable. It does this via visual indicators such as turning the most efficient movement path from green to red if a point is unreachable and making a very obvious beacon or red and white on that checkpoint.  </p>
+    </p>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="SIM.png" alt="Mass Agent Simulation (2023)" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Mass Agent Simulation (2023)</b></p>
+        <p>This project was to learn about optimisation and task control in a more structured manner than in the Populus remake, each agent having 6 individual needs with modifiers to them such as social obligation and morality. Its a framework that allowed on fairly low end hardware to simulate up to 600 agents going about their days in the simulated town.</p>
+        </div>
+    </div>
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="po.png" alt="Populus Remake in DirectX (2022)" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Populus Remake in DirectX (2022)</b></p>
+        <p>This was a group effort to recreate the game Populus in DirectX in a week, I was tasked with creating the backend to allow for control rebinding as our target platform was an arcade cabinet, although difficult to see in the demonstration video each pop, or human, will create housing on level ground and will create new pops.</p>
+        <br>  
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container" style="margin-bottom:32px" id="about">
+    <div class="w3-half">
+    <h4><b>About Me</b></h4>
+    <p>Hello, I'm Charles Hollingworth and i'm a Games Developer in Birstol/North Yorkshire and this is my portfolio, please browse through my Games and Technical Explorations. If you have any questions please feel free to reach out to me on LinkedIn</p>
+    <p>I have recently finished my final year in a Games Technology course and I am looking to start my career in games. Training in Performing Arts, Kitchens, Wearhouses, and Casinos has given me a wide range of skills, hobbies, and experience that i'd like to bring to my work in games.</p>
     <hr>
-
-    <h1 class="w3-center">Current projects</h1>
-
-    <div class="w3-row-padding">
-        <div class="w3-third">
-                <img src="PS.png" style="width:100%">
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">PullShot Tower Defense</p>
-                <hr>
-                <p>My current project is a Multiplayer Online Tower Defense based upon a map that can shift to create new paths allowing the direct manipulation of the enemy's path through the map to inconvenience your enemy.</p>
-            </div>
-        </div>
-
-        <div class="w3-third">
-            <img src="dis.png" style="width:100%">
-        <div class="w3-container w3-center">
-            <p class="w3-xlarge">Dissertation: Network Communication Standards</p>
-            <hr>
-            <p>My Dissertation project has been to create a network protocol built on top of UDP, this however was simplified down to the creation of a standard for data transference built on top of TCP due to time constraints. The TCP server in the example project is wrapped into a Shared Library made for the standard.</p>
-        </div>
+    <p>
+      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-linkedin w3-margin-right"></i>Request CV
+      </button>
+    </p>
+  </div>
+    <div class="w3-half">
+      <h3>Skills</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">C#</span> <span class="w3-tag w3-black w3-small w3-margin-bottom">Unity</span> <span class="w3-tag w3-black w3-small w3-margin-bottom">Git</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Linux Systems</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Vulkan</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DirectX</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Network Tooling</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Target Manager</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">C++</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Systems Administration</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Source</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">PhyreEngine</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Steamworks</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Godot</span>  <span class="w3-tag w3-grey w3-small w3-margin-bottom">Flax Engine</span> 
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Unreal</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">LARPer</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Leather working</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">HEMA</span>
+      </p>
     </div>
+</div>
 
-        <div class="w3-third">
-            <a href="https://www.youtube.com/watch?v=cqx-RKrUICc">
-            <img src="bb.png" style="width:100%">
-            </a>
-        <div class="w3-container w3-center">
-            <p class="w3-xlarge">Burglar Battle</p>
-            <hr>
-            <p>This is my final university project where the entire year of around 40 student collaborated to make a single game. I specifically crated the patrol & management systems for the AI and deployment to the Playstation platfrom.</p>
-        </div>
-    </div>
-        </div> 
-
-
+    
     <hr>
-
-    <h1 class="w3-center">Game Jam Games</h1>
-
-    <div class="w3-row-padding">
-        <div class="w3-third">
-            <a href="https://alexhalo3115.itch.io/2600-orcs-must-die">
-            <img src="PMD.png" style="width:100%">
-            </a>
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">Porks Must Die 2600 (2023)</p>
-                <p class="light">Requires Controller</p>
-                <p>Lead Artist</p>
-                <p>Player control scheme design & Animation Mapping</p>
-                <hr>
-                <p>This Game Jam was focused on the creation of a video game in the style and feel of the atari 2600.
-                </p>
-            </div>
-        </div>
+    
 
 
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
-        <div class="w3-third">
-            <a href="https://alexhalo3115.itch.io/the-island">
-                <img src="THHS.png" style="width:100%">
-            </a>
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">This House has Secrets (2023)</p>
-                <p class="light">Requires Controller</p>
-                <p>UX Design</p>
-                <p>Level & Data Management</p>
-                <hr>
-                <p>This Game Jam was centered around creating games that could run on a intel celeron NUC making the
-                    game as optimized as possible.</p>
-            </div>
-        </div>
+<!-- End page content -->
+</div>
 
-
-        <div class="w3-third">
-            <a href="https://alexhalo3115.itch.io/root-wars-the-thirst-for-life">
-
-                <img src="RW.png" style="width:100%">
-            </a>
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">Root Wars: The Thirst for Life (2023)</p>
-                <p class="light">Requires Keyboard & A Second Player</p>
-                <p>Audio Engineering using FMOD Studio</p>
-                <p>Time Management</p>
-                <hr>
-                <p>This Game Jam was for GGJ's Roots theme. We also worked with a student from another course, in this case a
-                    Music Technology student who created all audio for the game</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="w3-row-padding">
-        <div class="w3-third"><p></p></div>
-        <div class="w3-third">
-            <a href="https://thesporkbard.itch.io/wardensteddy">
-
-                <img src="WT.png" style="width:100%">
-            </a>
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">Warden's Teddy (2021)</p>
-                <p class="light">Requires Keyboard & Mouse</p>
-                <p>Level Design</p>
-                <p>Mechanics Design</p>
-                <hr>
-                <p>This Game Jam's theme was Lost and Found as part of GGJ. Searching through an abandoned prison complex to get the teddy lost somewhere inside.</p>
-            </div>
-        </div>
-        <div class="w3-third"><p></p></div>
-    </div>
-
-    <hr>
-
-    <h1 class="w3-center">Technical Exploration Tasks</h1>
-
-    <div class="w3-row-padding">
-        
-        <div class="w3-third">
-                <img src="SIM.png" style="width:100%">
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">Mass Agent Simulation (2023)</p>
-                <p class="light">No Playable Version, Code available upon request.</p>
-                <p>Mass Simulation Control</p>
-                <p>Task Optimisation Systems</p>
-                <hr>
-                <p>This project was to learn about optimisation and task control in a more structured manner than in the Populus remake, each agent having 6 individual needs with modifiers to them such as social obligation and morality. Its a framework that allowed on fairly low end hardware to simulate up to 600 agents going about their days in the simulated town.</p>
-            </div>
-        </div>
-
-        <div class="w3-third">
-                <img src="PP.png" style="width:100%">
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">Level Completability (2023)</p>
-                <p class="light">No Playable Version, Code available upon request.</p>
-                <p>Unity's Navmesh</p>
-                <p>UI Toolkit</p>
-                <hr>
-                <p>This project was to try and create a tool to check if levels are completable by using Unity's built-in navmesh, with focus being on making the tool easy to use. By adding the checker into the scene and having a navmesh it makes sure that all areas marked with a checkpoint are reachable and that the end is reachable. It does this via visual indicators such as turning the most efficient movement path from green to red if a point is unreachable and making a very obvious beacon or red and white on that checkpoint.  </p>
-                </div>
-        </div>
-
-        <div class="w3-third">
-            <a href="https://www.youtube.com/watch?v=D34I8WUo8as">
-
-                <img src="po.png" style="width:100%">
-            </a>
-            <div class="w3-container w3-center">
-                <p class="w3-xlarge">Populus Remake in DirectX (2022)</p>
-                <p class="light">No Playable Version, Code available upon request.</p>
-                <p>Control Scheme Manager</p>
-                <p>ECS and Backend Systems</p>
-                <hr>
-                <p>This was a group effort to recreate the game Populus in DirectX in a week, I was tasked with creating the backend to allow for control rebinding as our target platform was an arcade cabinet, although difficult to see in the demonstration video each pop, or human, will create housing on level ground and will create new pops.</p>
-            </div>
-        </div>
-
-    </div>
-
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
-
 </html>
