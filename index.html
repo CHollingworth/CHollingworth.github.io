@@ -9,6 +9,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+
+code {
+  font-family: monospace;
+  font-size: inherit;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+}
+
+.w3-modal-content {
+  width: 80%; /* Full width */
+}
+
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -24,9 +39,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p class="w3-text-grey">Game Developer & Voice Actor</p>
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Work Gallery</a> 
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>About Me</a> 
-    </div>
+    <a href="#active" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-lightbulb-o fa-fw w3-margin-right"></i>Active Projects</a> 
+    <a href="#jamgames" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clock-o fa-fw w3-margin-right"></i>Jam Games</a> 
+    <a href="#tech" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-map-o fa-fw w3-margin-right"></i>Technical Exploration</a> 
+    <a href="#voice" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-microphone fa-fw w3-margin-right"></i>Voice & Theater Projects</a> 
+      
+  </div>
   <div class="w3-panel w3-large">
     <a href="https://www.linkedin.com/in/charles-hollingworth-27663a258/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
@@ -38,10 +57,44 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:300px">
 
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+
+  <header id="about">
+    <a href="#"><img src="1682496890173.jpeg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>About Me</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16"></div>
+    </div>
+  </header>
+  <div class="w3-container" style="margin-bottom:32px" id="about">
+    <div class="w3-half">
+    <h4><b>About Me</b></h4>
+    <p>Hello, I'm Charles Hollingworth and i'm a Games Developer in Birstol/North Yorkshire and this is my portfolio, please browse through my Games and Technical Explorations. If you have any questions please feel free to reach out to me on LinkedIn</p>
+    <p>I have recently finished my final year in a Games Technology course and I am looking to start my career in games. Training in Performing Arts, Kitchens, Wearhouses, and Casinos has given me a wide range of skills, hobbies, and experience that i'd like to bring to my work in games.</p>
+    <hr>
+    <p>
+      <a href="https://www.linkedin.com/in/charles-hollingworth-27663a258/"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+        <i class="fa fa-linkedin w3-margin-right"></i>Request CV
+      </button>
+      </a>
+    </p>
+  </div>
+    <div class="w3-half">
+      <h3>Skills</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">C#</span> <span class="w3-tag w3-black w3-small w3-margin-bottom">Unity</span> <span class="w3-tag w3-black w3-small w3-margin-bottom">Git</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Linux Systems</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Vulkan</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DirectX</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Network Tooling</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Target Manager</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">C++</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Systems Administration</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Source</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">PhyreEngine</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Steamworks</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Godot</span>  <span class="w3-tag w3-grey w3-small w3-margin-bottom">Flax Engine</span> 
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Unreal</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">LARP</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Leather Work</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">HEMA</span>
+      </p>
+    </div>
+
+  
+  <!-- Header -->
+  <header id="active">
     <div class="w3-container">
     <h1><b>Active/Recent Projects</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16"></div>
@@ -50,7 +103,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   
   <div class="w3-container">
-    <img src="bb.png" alt="Burglar Battle" style="width:100%" class="w3-hover-opacity">
+    <img onclick="document.getElementById('bbModal').style.display='block'" src="bb.png" alt="Burglar Battle" style="width:100%" class="w3-hover-opacity">
     <div class="w3-container w3-white">
       <p><b>Burglar Battle</b></p>
       <p>This is my final university project where the entire year of around 40 student collaborated to make a single game. I specifically crated the patrol & management systems for the AI and deployment to the Playstation platfrom.</p>
@@ -60,7 +113,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   
   <div class="w3-row-padding">
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="PS.png" alt="Pullshot" style="width:100%" class="w3-hover-opacity">
+      <img src="PS.png" alt="Pullshot" style="width:100%" class="">
       <div class="w3-container w3-white">
         <p><b>PullShot Tower Defense</b></p>
         <p>My current project is a Multiplayer Online Tower Defense based upon a map that can shift to create new paths changing the layout little by little every 5 rounds.  </p>
@@ -70,7 +123,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         </div>
 
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="dis.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <img src="dis.png" alt="Norway" style="width:100%" class="">
       <div class="w3-container w3-white">
         <p><b>Dissertation: Network Communication Standards</b></p>
         <p>My Dissertation project has been to create a network protocol built on top of UDP, this however was simplified down to the creation of a standard for data transference built on top of TCP due to time constraints. The TCP server in the example project is wrapped into a Shared Library made for the standard.</p>
@@ -78,10 +131,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  <header id="Jam Games">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
+  <header id="jamgames">
+<div class="w3-container">
     <h1><b>Jam Games</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16"></div>
     </div>
@@ -115,7 +166,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
     </div>
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="WT.png" alt="Warden's Teddy (2021)" style="width:100%" class="w3-hover-opacity">
+      <img src="WT.png" alt="Warden's Teddy (2021)" style="width:100%" class="">
       <div class="w3-container w3-white">
         <p><b>Warden's Teddy (2021)</b></p>
         <p>This Game Jam's theme was Lost and Found as part of GGJ. Searching through an abandoned prison complex to get the teddy lost somewhere inside, whilst the game is fully completable it is designed as a rage game.</p>
@@ -124,10 +175,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 
 
-  <header id="Technical Exploration Tasks">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
+  <header id="tech">
+<div class="w3-container">
     <h1><b>Technical Exploration Tasks</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16"></div>
     </div>
@@ -160,43 +209,281 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
   </div>
 
-  <div class="w3-container" style="margin-bottom:32px" id="about">
-    <div class="w3-half">
-    <h4><b>About Me</b></h4>
-    <p>Hello, I'm Charles Hollingworth and i'm a Games Developer in Birstol/North Yorkshire and this is my portfolio, please browse through my Games and Technical Explorations. If you have any questions please feel free to reach out to me on LinkedIn</p>
-    <p>I have recently finished my final year in a Games Technology course and I am looking to start my career in games. Training in Performing Arts, Kitchens, Wearhouses, and Casinos has given me a wide range of skills, hobbies, and experience that i'd like to bring to my work in games.</p>
-    <hr>
-    <p>
-      <a href="https://www.linkedin.com/in/charles-hollingworth-27663a258/"><button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-linkedin w3-margin-right"></i>Request CV
-      </button>
-      </a>
-    </p>
-  </div>
-    <div class="w3-half">
-      <h3>Skills</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">C#</span> <span class="w3-tag w3-black w3-small w3-margin-bottom">Unity</span> <span class="w3-tag w3-black w3-small w3-margin-bottom">Git</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Linux Systems</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Vulkan</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DirectX</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Network Tooling</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Target Manager</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">C++</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Systems Administration</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Source</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">PhyreEngine</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Steamworks</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Godot</span>  <span class="w3-tag w3-grey w3-small w3-margin-bottom">Flax Engine</span> 
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Unreal</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">LARPer</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Leather working</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">HEMA</span>
-      </p>
-    </div>
+  
 </div>
 
+
+<header id="voice">
+  <div class="w3-container">
+      <h1><b>Voice & Theater Projects</b></h1>
+      <div class="w3-section w3-bottombar w3-padding-16"></div>
+      </div>
+    </header>
+    
+  
+    <div class="w3-row-padding">
+      <div class="w3-half w3-container w3-margin-bottom">
+      <img src="mojo.webp" alt="Mojo" style="width:100%" class="">
+      <div class="w3-container w3-white">
+        <p><b>Mojo (Grey Cardinal Studios 2019)</b></p>
+        <p>Mojo was a project run by a now dissolved company owned by me and Lewis Macey. During this project i took on many roles, as a Production Manager, Social Media Manager, Fundraising Manager, and many other roles. During this project we raised enough money to create a full production of the play Mojo by Jez Butterworth and perform it at the edinburgh fringe, even bringing in actor an actor from Los Angeles (Ceili Lang) and multiple from the East15 Acting school we created a notable show at the fringe with <a href="https://bouquetsbrickbatsreviews.com/2019/08/20/mojo-2/">Bouquets & Brickbats</a> calling the show a Gem.</p>
+      </div>
+    </div>
+
+    <div class="w3-half w3-container w3-margin-bottom">
+      <img src="want.JPG" alt="Want" style="width:100%" >
+      <div class="w3-container w3-white">
+        <p><b>Want (2018)</b></p>
+        <p>In 2018 as part of the NT Connections Project, i was in a collective production of Want, as part of the collective we each brought ideas to the table for how to create our production and ended with a piece of Physical Theater that was performed in the National Theater London.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+    
+  </div>
+
     
     <hr>
-    
-
-
+  
   
   <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
+
+
+
+
+
+
+
+
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-fading">
+   <header class="w3-container w3-white"> 
+    <span onclick="document.getElementById('id01').style.display='none'" 
+    class="w3-button w3-white w3-xlarge w3-display-topright">&times;</span>
+    
+    <div class="w3-section w3-bottombar w3-padding-16"><h2>Header</h2></div>
+   </header>
+ 
+   <div class="w3-bar w3-border-bottom">
+    <button class="tablink w3-bar-item w3-button" onclick="openTab(event, 'About')">About</button>
+    <button class="tablink w3-bar-item w3-button" onclick="openTab(event, 'Code Snippet')">Code Snippet</button>
+    <button class="tablink w3-bar-item w3-button" onclick="openTab(event, 'Play')">Play</button>
+   </div>
+ 
+   <div id="About" class="w3-container city">
+    <h1>London</h1>
+    <code>London is the most populous city in the United Kingdom, with a metropolitan area of over 9 million inhabitants.</code>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   </div>
+ 
+   <div id="Code Snippet" class="w3-container city">
+    <h1>Paris</h1>
+    <p>Paris is the capital of France.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   </div>
+ 
+   <div id="Play" class="w3-container city">
+    <h1>Tokyo</h1>
+    <p>Tokyo is the capital of Japan.</p><br>
+   </div>
+ 
+  </div>
+ </div>
+
+
+
+ <div id="bbModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+   <header class="w3-container w3-white"> 
+    <span onclick="document.getElementById('bbModal').style.display='none'" 
+    class="w3-button w3-white w3-xlarge w3-display-topright">&times;</span>
+    
+    <div class="w3-section w3-bottombar w3-padding-16"><h2>Burglar Battle</h2></div>
+   </header>
+ 
+   <div class="w3-bar w3-border-bottom">
+    <button class="tablink w3-bar-item w3-button" onclick="openTab(event, 'BBCodeSnippet')">Code Snippet</button>
+    <button class="tablink w3-bar-item w3-button" onclick="openTab(event, 'BBWatch')">Trailer</button>
+   </div>
+
+ 
+   <div id="BBCodeSnippet" class="w3-container city" style="display: block;">
+
+    <sub>Documentation has to the top of the page, Doxygen tags have been removed.</sub>
+       <h2>Patrol Points for the AI Systems.</h2>
+       
+       
+       <h3>Creating Basic Patrol Paths</h3>
+       <ol>
+       <li>Create three empty game objects and attach this script to them.</li>
+       <li>Connect them by setting the next patrol point in each respective inspector.</li>
+       <li>Change the colour of the patrol by changing the colour of the first patrol point.</li>
+       <li>Place a guard and assign their colour to the same as the patrol path, this is case-sensitive.</li>
+       <li>Assign the guard's first patrol point and hit play the guard will now follow the created path.</li>
+       </ol>
+       
+       <h3>Using Dynamic Link</h3>
+       <ol>
+       <li>Create three empty game objects and attach this script to them.</li>
+       <li>Connect them by setting the next patrol point in each respective inspector, do not set this for the last patrol point, instead enable dynamic link</li>
+       <li>Dynamic link will attempt to connect to the closest PatrolPoint of the same colour, if this fails then it will target the nearest patrol point. It will attempt to do this upon game start.</li>
+       </ol>
+      
+      <div class="w3-container w3-dark-gray">
+    <pre><code>using System;
+      using UnityEngine;
+      using UnityEngine.AI;
+      
+      [ExecuteInEditMode]
+      
+      public class PatrolPoint : MonoBehaviour
+      {
+          // An Enum used to define all possible types of PatrolPoint.
+          public enum PatrolPointType
+          {
+              NO_TYPE = -1,
+              POINT = 0,
+              AREA = 1,
+              COMPLEX = 2,
+              SPLIT = 3
+          }
+      
+          // Stop the patrol point from finding the next patrol point.
+          [SerializeField] protected bool noNextPatrolPoint = false;
+          
+          // The Type of the patrol point, used largely in sub-classes.
+          public PatrolPointType Type { get; protected set; }
+      
+          [SerializeField] private PatrolPoint _nextPatrolPoint = null;
+          
+          // Public getter for the next patrol point. This should not be set in script.
+          public PatrolPoint nextPatrolPoint { get => _nextPatrolPoint; }
+          [Space] 
+          [Header("Dynamic Link finds the next patrol point. \nPlease make sure that the next nearest point is the intended target.")]
+          [SerializeField] private bool _dynamicLink = false;
+          
+          // Each patrol path has a colour determined by its origin point, this colour is case-sensitive. 
+          // It is not advisable to set this colour during runtime as it will only have an effect on the origin patrol point. 
+          [Header("Will only take effect on the origin Patrol Point.")]
+          [SerializeField] public Color patrolRouteColour = Color.black;
+      
+          // Start is kept private as we want our inherited classes to use their own.
+          private void Start()
+          {
+              Type = PatrolPointType.POINT;
+              Init();
+              
+          }
+      
+          /// Init contains continuity checking and the DynamicLink functionality.
+          /// Init is used as the start function due to this class being inheritable.
+          public void Init()
+          {
+              if (Application.isPlaying && _nextPatrolPoint == null && !_dynamicLink)
+              {
+                  // Patrols are expected to be a closed loop.
+                  // This will attempt to automatically resolve with dynamic link, please check this patrol point's configuration.
+                  _dynamicLink = true;
+              }
+      
+              if (Application.isPlaying)
+              {
+                  GuardManager.Register(this);
+              }
+      
+              if (noNextPatrolPoint)
+              {
+                  return;
+              }
+              
+              if (_dynamicLink && Application.isPlaying)
+              {
+                  PatrolPoint[] potentials = FindObjectsOfType<PatrolPoint>();
+                  Array.Sort(potentials,
+                      delegate(PatrolPoint x, PatrolPoint y)
+                      {
+                          return Vector3.Distance(x.gameObject.transform.position, gameObject.transform.position)
+                              .CompareTo(Vector3.Distance(y.gameObject.transform.position, gameObject.transform.position));
+                      });
+                  foreach (var vPatrolPoint in potentials)
+                  {
+                      if ((vPatrolPoint.patrolRouteColour == patrolRouteColour) && (vPatrolPoint != this))
+                      {
+                          _nextPatrolPoint = vPatrolPoint;
+                          break;
+                      }
+                  }
+                  
+              }
+              
+              
+          }
+          
+      
+      #if UNITY_EDITOR
+          private NavMeshPath _examplePath = null;
+          void OnDrawGizmos()
+          {
+              Gizmos.color = Color.black;
+              if (_nextPatrolPoint)
+              {
+                  Gizmos.color = patrolRouteColour;
+              }
+      
+              Gizmos.DrawCube(transform.position, new Vector3(1, 1, 1));
+          }
+      
+          public void Update()
+          {
+              try
+              {
+                  if (_nextPatrolPoint is null) return;
+      
+                  _examplePath = new NavMeshPath();
+                  NavMesh.CalculatePath(transform.position, _nextPatrolPoint.gameObject.transform.position,
+                      NavMesh.AllAreas, _examplePath);
+      
+                  for(int i = 0; i < _examplePath.corners.Length - 1; i++)
+                  {
+                      Debug.DrawLine(_examplePath.corners[i], _examplePath.corners[i + 1], patrolRouteColour);
+                  }
+      
+                  if (_nextPatrolPoint.patrolRouteColour != patrolRouteColour)
+                  {
+                      _nextPatrolPoint.patrolRouteColour = patrolRouteColour;
+                  }
+              }
+              catch
+              {
+                  
+              }
+          }
+      #endif
+          
+          
+      }
+      </code></pre>
+    </div>
+   </div>
+ 
+   <div id="BBWatch" class="w3-container city">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cqx-RKrUICc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>
+ 
+  </div>
+ </div>
+
+
+
+
+
+
+
 
 <script>
 // Script to open and close sidebar
@@ -210,6 +497,22 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 </script>
-
+<script>
+  document.getElementsByClassName("tablink")[0].click();
+  
+  function openTab(evt, tabName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].classList.remove("w3-light-grey");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("w3-light-grey");
+  }
+  </script>
 </body>
 </html>
