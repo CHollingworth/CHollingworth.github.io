@@ -97,6 +97,7 @@ code {
   <header id="active">
     <div class="w3-container">
     <h1><b>Active/Recent Projects</b></h1>
+    <sub>Click on a project to see a code snippet or trailer!</sub>
     <div class="w3-section w3-bottombar w3-padding-16"></div>
     </div>
   </header>
@@ -113,7 +114,7 @@ code {
   
   <div class="w3-row-padding">
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="PS.png" alt="Pullshot" style="width:100%" class="">
+      <img onclick="document.getElementById('psModal').style.display='block'" src="PS.png" alt="Pullshot" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>PullShot Tower Defense</b></p>
         <p>My current project is a Multiplayer Online Tower Defense based upon a map that can shift to create new paths changing the layout little by little every 5 rounds.  </p>
@@ -123,7 +124,7 @@ code {
         </div>
 
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="dis.png" alt="Norway" style="width:100%" class="">
+      <img onclick="document.getElementById('disModal').style.display='block'" src="dis.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Dissertation: Network Communication Standards</b></p>
         <p>My Dissertation project has been to create a network protocol built on top of UDP, this however was simplified down to the creation of a standard for data transference built on top of TCP due to time constraints. The TCP server in the example project is wrapped into a Shared Library made for the standard.</p>
@@ -134,20 +135,21 @@ code {
   <header id="jamgames">
 <div class="w3-container">
     <h1><b>Jam Games</b></h1>
+    <sub>Click to play (most require a controller plugged in)!</sub>
     <div class="w3-section w3-bottombar w3-padding-16"></div>
     </div>
   </header>
 
   <div class="w3-row-padding">
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="PMD2.png" alt="Porks Must DIE" style="width:100%" class="w3-hover-opacity">
+      <img onclick="location.href = 'https://alexhalo3115.itch.io/2600-orcs-must-die';" src="PMD2.png" alt="Porks Must DIE" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Porks Must Die 2600 (2023)</b></p>
         <p>This Game Jam was to recreate a modern game in the spirit of the Atari 2600, this was a recreation of Orcs Must Die.
         </div>
     </div>
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="THHS.png" alt="This House has Secrets (2023)" style="width:100%" class="w3-hover-opacity">
+      <img onclick="location.href = 'https://alexhalo3115.itch.io/the-island';" src="THHS.png" alt="This House has Secrets (2023)" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>This House has Secrets (2023)</b></p>
         <p>This House has Secrets was a hardware restricted jam to create an original game on an Intel Celeron NuC with integrated graphics.</p>
@@ -158,7 +160,7 @@ code {
 
   <div class="w3-row-padding">
     <div class="w3-half w3-container">
-      <img src="RW.png" alt="Root Wars: The Thirst for Life (2023)" style="width:100%" class="w3-hover-opacity">
+      <img onclick="location.href = 'https://alexhalo3115.itch.io/root-wars-the-thirst-for-life';" src="RW.png" alt="Root Wars: The Thirst for Life (2023)" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Root Wars: The Thirst for Life (2023)</b></p>
         <p>This Game Jam was for GGJ's Roots theme. We also worked with a student from another course, in this case a
@@ -166,7 +168,7 @@ code {
       </div>
     </div>
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="WT.png" alt="Warden's Teddy (2021)" style="width:100%" class="">
+      <img  onclick="location.href = 'https://thesporkbard.itch.io/wardensteddy';" src="WT.png" alt="Warden's Teddy (2021)" style="width:100%" class="w3-hover-opacity">
       <div class="w3-container w3-white">
         <p><b>Warden's Teddy (2021)</b></p>
         <p>This Game Jam's theme was Lost and Found as part of GGJ. Searching through an abandoned prison complex to get the teddy lost somewhere inside, whilst the game is fully completable it is designed as a rage game.</p>
@@ -184,7 +186,7 @@ code {
   
 
   <div class="w3-container w3-margin-bottom">
-    <img src="PP.png" alt="Level Completability (2023)" style="width:100%" class="w3-hover-opacity">
+    <img src="PP.png" alt="Level Completability (2023)" style="width:100%">
     <div class="w3-container w3-white">
       <p><b>Level Completability (2023)</b></p>
       <p>This project was to try and create a tool to check if levels are completable by using Unity's built-in navmesh, with focus being on making the tool easy to use. By adding the checker into the scene and having a navmesh it makes sure that all areas marked with a checkpoint are reachable and that the end is reachable. It does this via visual indicators such as turning the most efficient movement path from green to red if a point is unreachable and making a very obvious beacon or red and white on that checkpoint.  </p>
@@ -193,14 +195,14 @@ code {
   </div>
   <div class="w3-row-padding">
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="SIM.png" alt="Mass Agent Simulation (2023)" style="width:100%" class="w3-hover-opacity">
+      <img src="SIM.png" alt="Mass Agent Simulation (2023)" style="width:100%" >
       <div class="w3-container w3-white">
         <p><b>Mass Agent Simulation (2023)</b></p>
         <p>This project was to learn about optimisation and task control in a more structured manner than in the Populus remake, each agent having 6 individual needs with modifiers to them such as social obligation and morality. Its a framework that allowed on fairly low end hardware to simulate up to 600 agents going about their days in the simulated town.</p>
         </div>
     </div>
     <div class="w3-half w3-container w3-margin-bottom">
-      <img src="po.png" alt="Populus Remake in DirectX (2022)" style="width:100%" class="w3-hover-opacity">
+      <img src="po.png" alt="Populus Remake in DirectX (2022)" style="width:100%">
       <div class="w3-container w3-white">
         <p><b>Populus Remake in DirectX (2022)</b></p>
         <p>This was a group effort to recreate the game Populus in DirectX in a week, I was tasked with creating the backend to allow for control rebinding as our target platform was an arcade cabinet, although difficult to see in the demonstration video each pop, or human, will create housing on level ground and will create new pops.</p>
@@ -480,9 +482,311 @@ code {
 
 
 
+ <div id="disModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+   <header class="w3-container w3-white"> 
+    <span onclick="document.getElementById('disModal').style.display='none'" 
+    class="w3-button w3-white w3-xlarge w3-display-topright">&times;</span>
+    
+    <div class="w3-section w3-bottombar w3-padding-16"><h2>Dissertation Project</h2></div>
+   </header>
+
+ 
+   <div id="DisCodeSnippet" class="w3-container" style="display: block;">
+
+    <sub>Documentation has been removed, Doxygen tags have been removed.</sub>
+      
+      
+    <div class="w3-container w3-dark-gray">
+    <pre><code>
+using UnityEngine;
+using System;
+using System.Runtime.InteropServices;
+using System.Text;
+
+public class UnityHelper : MonoBehaviour
+{
+    
+    [DllImport("libcepe.so")]
+    public static extern UIntPtr GetArraySizeSecondary();
+
+    [DllImport("libcepe.so")]
+    public static extern void launch_server();
+    
+    [DllImport("libcepe.so")]
+    public static extern void launch_client();
+    [DllImport("libcepe.so")]
+    public static extern void launch_secondary_client();
+    
+    [DllImport("libcepe.so")]
+    public static extern void send_data(byte[] data, UIntPtr size);
+    
+    [DllImport("libcepe.so")]
+    public static extern void send_secondary_data(byte[] data, UIntPtr size);
+    
+    [DllImport("libcepe.so")]
+    public static extern IntPtr grab_data();
+    
+    [DllImport("libcepe.so")]
+    public static extern IntPtr grab_secondary_data();
+    
+
+public static byte[] ConvertToByteArray<T>(int id, T value)
+{
+    // Get the type of the value
+    Type type = typeof(T);
+
+    // Serialize the ID as a 4-byte integer
+    byte[] idBytes = BitConverter.GetBytes(id);
+
+    // Serialize the Unix timestamp as a 4-byte integer
+    byte[] timestampBytes = BitConverter.GetBytes((int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
+
+    // Serialize the type name as a variable length ASCII string
+    byte[] typeNameBytes = Encoding.ASCII.GetBytes(type.AssemblyQualifiedName);
+
+    // Create the header by concatenating the ID, Unix timestamp, and type name bytes
+    byte[] header = new byte[idBytes.Length + timestampBytes.Length + typeNameBytes.Length];
+    Buffer.BlockCopy(idBytes, 0, header, 0, idBytes.Length);
+    Buffer.BlockCopy(timestampBytes, 0, header, idBytes.Length, timestampBytes.Length);
+    Buffer.BlockCopy(typeNameBytes, 0, header, idBytes.Length + timestampBytes.Length, typeNameBytes.Length);
+
+    // Serialize the type-specific data
+    byte[] data;
+    if (type.IsValueType) {
+
+        data = new byte[header.Length + Marshal.SizeOf(type)];
+        Buffer.BlockCopy(header, 0, data, 0, header.Length);
+        GCHandle handle = GCHandle.Alloc(data, GCHandleType.Pinned);
+        Marshal.StructureToPtr(value, handle.AddrOfPinnedObject() + header.Length, false);
+        handle.Free();
+    } else if (type == typeof(string)) {
+
+        data = Encoding.Unicode.GetBytes((string)(object)value);
+        byte[] lengthBytes = BitConverter.GetBytes(data.Length);
+        byte[] newData = new byte[header.Length + sizeof(int) + data.Length];
+        Buffer.BlockCopy(header, 0, newData, 0, header.Length);
+        Buffer.BlockCopy(lengthBytes, 0, newData, header.Length, sizeof(int));
+        Buffer.BlockCopy(data, 0, newData, header.Length + sizeof(int), data.Length);
+        data = newData;
+    } else {
+
+        throw new NotSupportedException("Type not supported.");
+    }
+    
+    return data;
+}
+
+public static T ConvertFromByteArray<T>(int id, byte[] data, out int timestamp)
+{
+    timestamp = BitConverter.ToInt32(data, sizeof(int));
+    
+    Type type = GetTypeFromHeader<T>(id, data);
+
+    // Deserialize the type-specific data
+    if (type == typeof(string)) {
+        // For strings, get the length of the UTF-16LE encoded byte array and deserialize it to a string
+        int length = BitConverter.ToInt32(data, sizeof(int) * 2 + type.AssemblyQualifiedName.Length);
+        string value = Encoding.Unicode.GetString(data, sizeof(int) * 2 + type.AssemblyQualifiedName.Length + sizeof(int), length);
+        return (T)(object)value;
+    } else if (type.IsValueType) {
+        // For value types, create a pinned handle to the byte array and deserialize it to the value type
+        GCHandle handle = GCHandle.Alloc(data, GCHandleType.Pinned);
+        T value = (T)Marshal.PtrToStructure(handle.AddrOfPinnedObject() + 8 + type.AssemblyQualifiedName.Length, type);
+        handle.Free();
+        return value;
+    } else {
+        // Throw an exception if the type is not supported
+        throw new NotSupportedException("Type not supported.");
+    }
+}
+
+public static int GetIdFromByteArray(byte[] data) {
+    return BitConverter.ToInt32(data, 0);
+}
+
+public static int GetTimestampFromByteArray(byte[] data) {
+    return BitConverter.ToInt32(data, sizeof(int));
+}
 
 
+public static Type GetTypeFromHeader<T>(int id, byte[] data)
+{
+    // Create a byte array containing the ID, Unix timestamp, and type name bytes from the header
+    byte[] header = new byte[8 + data.Length];
+    Buffer.BlockCopy(BitConverter.GetBytes(id), 0, header, 0, sizeof(int));
+    Buffer.BlockCopy(BitConverter.GetBytes(GetTimestampFromByteArray(data)), 0, header, sizeof(int), sizeof(int));
+    Buffer.BlockCopy(Encoding.ASCII.GetBytes(typeof(T).AssemblyQualifiedName), 0, header, 8, typeof(T).AssemblyQualifiedName.Length);
 
+    // Extract the type name as a variable length ASCII string from the header
+    string typeName = Encoding.ASCII.GetString(header, 8, header.Length - 8);
+
+    // Get the type from the type name
+    Type type = Type.GetType(typeName);
+    if (type == null) {
+        // Throw an exception if the type is invalid
+        throw new ArgumentException("Invalid type in header.");
+    }
+    return type;
+}
+
+
+public static String GetTypeFromHeader_String<T>(int id, byte[] data)
+{
+    // Create a byte array containing the ID, Unix timestamp, and type name bytes from the header
+    byte[] header = new byte[8 + data.Length];
+    
+    Buffer.BlockCopy(BitConverter.GetBytes(id), 0, header, 0, sizeof(int));
+    Buffer.BlockCopy(BitConverter.GetBytes(GetTimestampFromByteArray(data)), 0, header, sizeof(int), sizeof(int));
+    Buffer.BlockCopy(Encoding.ASCII.GetBytes(typeof(T).AssemblyQualifiedName), 0, header, 8, typeof(T).AssemblyQualifiedName.Length);
+
+    // Extract the type name as a variable length ASCII string from the header
+    string typeName = Encoding.ASCII.GetString(header, 8, header.Length - 8);
+    return typeName;
+}
+
+
+}
+
+
+    </code></pre>
+    </div>
+   </div>
+ 
+ 
+  </div>
+ </div>
+
+
+ <div id="psModal" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+   <header class="w3-container w3-white"> 
+    <span onclick="document.getElementById('psModal').style.display='none'" 
+    class="w3-button w3-white w3-xlarge w3-display-topright">&times;</span>
+    
+    <div class="w3-section w3-bottombar w3-padding-16"><h2>Pullshot MapBuilder</h2></div>
+   </header>
+
+ 
+   <div id="PSCodeSnippet" class="w3-container" style="display: block;">
+
+    <sub>Code in an early state.</sub>
+      
+      
+    <div class="w3-container w3-dark-gray">
+    <pre><code> using System.Collections.Generic;
+      using Unity.AI.Navigation;
+      using UnityEngine;
+      using Random = UnityEngine.Random;
+      
+      
+      public class MapBuilder : MonoBehaviour
+      {
+          public NavMeshSurface x;
+          [SerializeField] public Dictionary<string,MapPoint> points = new Dictionary<string,MapPoint>();
+          public static MapBuilder MB;
+          public bool ready = false;
+      
+          public bool main_menu_loop = false;
+          public bool testDrop = false;
+          public bool resetMap = false;
+          void Awake()
+          {
+              if (MapBuilder.MB == null)
+              {
+                  MapBuilder.MB = this;
+                  
+              }
+              else
+              {
+                  Destroy(this);
+              }
+              
+          }
+      
+          public void startMainMenuLoop()
+          {
+              main_menu_loop = true;
+          }
+      
+          public void beginGame()
+          {
+              resetMap = true;
+          }
+          
+          public static void Identify(MapPoint val)
+          {
+              MB.points.Add(val.x +":"+ val.y,val);
+              if (MB.points.Count == MB.points.Max)
+              {
+                  Debug.Log("Done");
+                  MB.ready = true;
+                  
+              }
+          }
+      
+          private int i_menu = 0; 
+          private void LateUpdate()
+          {
+              if (MB.ready && main_menu_loop)
+              {
+                  i_menu++;
+                  Pathfinder.PathfindingResult res;
+                  Pathfinder.Pathfinding(MB.points[Mathf.CeilToInt(Random.Range(0, MB.points.YMax))+":"+Mathf.CeilToInt(Random.Range(0, MB.points.XMax))],MB.points["18:9"], out res,50);
+                  if (res.sucsess) res.FreeDropPath();
+                  Pathfinder.Pathfinding(MB.points[Mathf.CeilToInt(Random.Range(0, MB.points.YMax))+":"+Mathf.CeilToInt(Random.Range(0, MB.points.XMax))],MB.points["18:9"], out res,50);
+                  if (res.sucsess) res.AlignPath();
+              }else
+              if (MB.ready && testDrop)
+              {
+                  Pathfinder.PathfindingResult res;
+                  var telk = Random.Range(0, 20);
+                  if (telk > 8)
+                  {
+                      Pathfinder.Pathfinding(
+                          MB.points[MB.points.YMax + ":" + Mathf.RoundToInt(Random.Range(0, MB.points.XMax))],
+                          MB.points["18:9"], out res, 50);
+                  }
+                  else
+                  {
+                      Pathfinder.Pathfinding(
+                          MB.points[0 + ":" + Mathf.RoundToInt(Random.Range(0, MB.points.XMax))],
+                          MB.points["18:9"], out res, 50);
+                  }
+      
+                  if (res.sucsess) res.DropPath();
+                  x.BuildNavMesh();
+                  testDrop = false;
+              }
+              if (MB.ready && resetMap)
+              {
+                  resetAll();
+              }
+          }
+      
+          public void resetAll()
+          {
+              main_menu_loop = false;
+              testDrop = false;
+              resetMap = false;
+              foreach (var point in MB.points)
+              {
+                  point.Value.Align();
+              }
+              
+          }
+          
+          
+      }</code></pre>
+    </div>
+   </div>
+ 
+ 
+  </div>
+ </div>
+
+
+ 
 
 
 <script>
